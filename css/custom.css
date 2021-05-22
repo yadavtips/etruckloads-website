@@ -1,0 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.quote-btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
