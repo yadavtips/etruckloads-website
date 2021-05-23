@@ -31,11 +31,14 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/custom.css">
+    
   </head>
 
   <body>
+    
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark">
+      
       <div class="row py-2 px-lg-5">
         <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
           <div class="d-inline-flex align-items-center text-white">
@@ -246,15 +249,18 @@
           </div>
           <div id="form-section" class="col-lg-5">
             <div class="bg-primary py-5 px-4 px-sm-5">
-                <form >
+              <div id="app">
+                <form v-if="formSubmitted">
                     <div class="form-group text-light text-center">
                       <div class="form-check form-check-inline mr-2">
                         <input
                           class="form-check-input"
                           type="radio"
-                          name="inlineRadioOptions"
+                         
+                          v-model="load"
                           id="inlineRadio1"
-                          value="option1"
+                          value="PL"
+                          required
                         />
                         <label class="form-check-label" for="inlineRadio1"
                           >I Want Load</label
@@ -264,15 +270,30 @@
                         <input
                           class="form-check-input"
                           type="radio"
-                          name="inlineRadioOptions"
+                         
+                          v-model="load"
                           id="inlineRadio2"
-                          value="option2"
+                          value="PT"
+                          required
                         />
                         <label class="form-check-label" for="inlineRadio2"
                           >I Want Truck</label
                         >
                       </div>
-        
+                      <br>
+                      <br>
+                      <div class="form-group text-left text-light">
+                        <label for="exampleFormControlInput1">Phone Number</label>
+                        <input
+                          type="phone"
+                          class="form-control"
+                          v-model="phone"
+                          id="exampleFormControlInput1"
+                          placeholder="Phone Number"
+                          required
+                        />
+                      </div>
+        <!-- 
                       <div class="form-row mt-3">
                         <div class="form-group col-md-8">
                           <label for="exampleFormControlInput1">Phone Number</label>
@@ -286,24 +307,28 @@
                         <div class="col-md-4 justify-content-center m-auto pt-3">
                           <button type="button" class="btn btn-outline-light">Get OTP</button>
                         </div>
-                      </div>
+                      </div> -->
                       <div class="form-row">
                         <div class="form-group col-md-6">
                           <label for="inputEmail4">Load From</label>
                           <input
                             type="email"
                             class="form-control"
+                            v-model="loadFrom"
                             id="inputEmail4"
                             placeholder="Load From"
+                            required
                           />
                         </div>
                         <div class="form-group col-md-6">
                           <label for="inputPassword4">Dispatch To</label>
                           <input
-                            type="password"
+                            type="text"
                             class="form-control"
+                            v-model="dispatchTo"
                             id="inputPassword4"
                             placeholder="Dispatch To"
+                            required
                           />
                         </div>
                       </div>
@@ -311,7 +336,7 @@
                       <div class="form-row">
                         <div  class="form-group col-md-6">
                           <label for="exampleFormControlSelect1">Vehicle Type</label>
-                          <select class="form-control" id="exampleFormControlSelect1">
+                          <select class="form-control" id="exampleFormControlSelect1" v-model="vehicleType" required>
                             <option selected>Vehicle Type</option>
                             <option>32 Feet , 7 Ton (32 * 8 * 8)</option>
                             <option>32 Feet , 7 Ton hq (32 * 8 * 9.6)</option>
@@ -327,7 +352,7 @@
                         </div>
                         <div class="form-group col-md-6">
                           <label for="exampleFormControlSelect1">Payment Terms</label>
-                          <select class="form-control" id="exampleFormControlSelect1">
+                          <select class="form-control" id="exampleFormControlSelect1"  v-model="paymentTerms" required>
                             <option selected>Payment Terms</option>
                             <option>90% advance 10% at unloading/pod</option>
                             <option>80% advance 20 % at unload/pod</option>
@@ -343,13 +368,38 @@
                         class="form-control"
                         id="exampleFormControlTextarea1"
                         rows="3"
+                        v-model="remarks"
                       ></textarea>
                     </div>
                    
                       <div class="col text-center align-items-center">
-                        <button type="button" class="btn btn-dark">Submit</button>
+                        <button @click="submit()" type="button" class="btn btn-dark">Submit</button>
                       </div>
-                  </form>
+                      <p v-if="errors.length" style="color: yellow;">
+                        <b>Please correct the following error(s):</b>
+                        <ul>
+                          <li v-for="error in errors" style="color: yellow;">{{ error }}</li>
+                        </ul>
+                      </p>
+                </form>
+                <form v-else>
+                  <div class="form-row mt-3">
+                    <div class="form-group col-md-8">
+                      <label for="exampleFormControlInput1" style="color: white;">ENTER OTP</label>
+                      <input
+                        type="OTP"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Enter Your OTP"
+                      />
+                    </div>
+                    
+                    <div class="col-md-4 justify-content-center m-auto pt-3">
+                      <button type="button" class="btn btn-outline-light">Submit</button>
+                    </div>
+                  </div>
+                </form>
+                </div>
             </div>
           </div>
         </div>
@@ -1193,6 +1243,7 @@
         </div>
       </div>
     </div>
+  
     <div
       class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
       style="border-color: #3e3e4e !important"
@@ -1222,6 +1273,7 @@
         </div>
       </div>
     </div>
+   
     <!-- Footer End -->
 
     <!-- Back to Top -->
@@ -1243,5 +1295,81 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<script>
+      var app = new Vue({
+  el: '#app',
+  data: {
+    errors: [],
+    message: 'Hello Vue!',
+    formSubmitted: 'false',
+    load:null,
+    phone:null,
+    loadFrom:null,
+    dispatchTo:null,
+    vehicleType:null,
+    paymentTerms:null,
+    remarks:null,
+  },
+  methods: {
+    submit(){
+ 
+var formdata = new FormData();
+formdata.append("load", this.load);
+formdata.append("phone", this.phone);
+formdata.append("loadFrom", this.loadFrom);
+formdata.append("dispatchTo", this.dispatchTo);
+formdata.append("vehicleType", this.vehicleType);
+formdata.append("paymentTerms", this.paymentTerms);
+formdata.append("remarks", this.remarks);
+
+
+var requestOptions = {
+  method: 'POST',
+  body: formdata,
+};
+
+      this.errors = [];
+      var errors = false;
+      
+      if (!this.phone) {
+        this.errors.push('Phone is required.');
+        errors = true
+      }
+      if (!this.loadFrom) {
+        this.errors.push('Load From required.');
+        errors = true
+        
+      }
+      if (!this.dispatchTo) {
+        this.errors.push('Dispatch To is required.');
+        errors = true
+      }
+      if (!this.vehicleType) {
+        this.errors.push('Vehicle Type is required.');
+        errors = true
+      }
+      if (!this.paymentTerms) {
+        this.errors.push('Payment Terms is required.');
+        errors = true
+      }
+
+    if(errors){
+      return
+    }
+
+     fetch("https://crm.etruckloads.in/api/web-leads", requestOptions)
+     .then(response => response.text())
+     .then(result => console.log(result))
+     .catch(error => console.log('error', error));
+     // this.formSubmitted = null
+      
+
+   
+    }
+  },
+})
+    </script>
   </body>
 </html>
