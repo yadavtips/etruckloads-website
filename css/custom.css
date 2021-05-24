@@ -6,3 +6,41 @@ html {
   background-color: rgb(255, 255, 255);
   color: black;
 }
+
+.form-container {
+  max-height: 81vh;
+}
+
+.welcome-heading {
+  width: 100%;
+  overflow: hidden;
+  animation: slide-left 3s;
+}
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.welcome-text {
+  color: #ff0000;
+  animation: color-change 1s 5;
+}
+
+@keyframes color-change {
+  0% {
+    color: rgb(255, 238, 0);
+  }
+  50% {
+    color: rgb(255, 255, 255);
+  }
+  100% {
+    color: #ff0000;
+  }
+}

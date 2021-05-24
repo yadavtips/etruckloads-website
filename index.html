@@ -40,17 +40,15 @@
     <div class="container-fluid bg-dark">
       
       <div class="row py-2 px-lg-5">
-        <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-          <div class="d-inline-flex align-items-center text-white">
-            <small><i class="fa fa-phone-alt mr-2"></i>+91 9821824740</small>
-            <small class="px-3">|</small>
-            <small
-              ><i class="fa fa-envelope mr-2"></i>yadavtips@gmail.com</small
-            >
-          </div>
-        </div>
-        <div class="col-lg-6 text-center text-lg-right">
+        
+        <div class="col text-center text-lg-center">
           <div class="d-inline-flex align-items-center">
+            <a class="text-white px-2" href="">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a class="text-white px-2" href="https://www.google.com/maps/place/Etruckload+logistics+pvt+ltd+20,+32+feet+container+trucks+supplier+Delhi%2FNCR+to+all+over+India/@28.6235834,77.0418842,17z/data=!3m1!4b1!4m5!3m4!1s0x390d05a76f5571ed:0x67a0374232915a8c!8m2!3d28.6235834!4d77.0440757" target="_blank">
+              <i class="fa fa-map-marker-alt"></i>
+            </a>
             <a class="text-white px-2" href="">
               <i class="fab fa-facebook-f"></i>
             </a>
@@ -83,11 +81,9 @@
           px-lg-5
         "
       >
-        <a href="index.html" class="navbar-brand ml-lg-3">
-          <h1 class="m-0 display-5  text-primary">
-            <i class="fa fa-truck mr-2"></i>Etruck Loads
-          </h1>
-        </a>
+      <a class="navbar-brand" href="#">
+        <img src="./img/etrucklogo.png" width="100" height="50" style="border-radius: 5px;" class="d-inline-block align-top" alt="Etruck Logo">
+      </a>
         <button
           type="button"
           class="navbar-toggler"
@@ -101,10 +97,9 @@
           id="navbarCollapse"
         >
           <div class="navbar-nav m-auto py-0">
-            <a href="index.html" class="nav-item nav-link active">Home</a>
-            <a href="about.htm" class="nav-item nav-link">About</a>
-            <a href="#our-services" class="nav-item nav-link">Service</a>
-            <a href="price.htm" class="nav-item nav-link">Price</a>
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="#about-us" class="nav-item nav-link">About Us</a>
+            <a href="#our-services" class="nav-item nav-link">Fleets</a>
             <!-- <div class="nav-item dropdown">
               <a
                 href="#"
@@ -117,10 +112,10 @@
                 <a href="single.htm" class="dropdown-item">Blog Detail</a>
               </div>
             </div> -->
-            <a href="contact.htm" class="nav-item nav-link">Contact</a>
+            <a href="#contact-us" class="nav-item nav-link">Contact Us</a>
           </div>
           <a href="" class="btn btn-dark quote-btn py-2 px-4 d-none d-lg-block"
-            >Get A Quote</a
+            ><i class="fa fa-phone mr-2"></i>Call Us</a
           >
         </div>
       </nav>
@@ -128,130 +123,47 @@
     <!-- Navbar End -->
 
     <!-- Header Start -->
-    <div class="jumbotron jumbotron-fluid mb-5">
-      <div class="container text-center py-5">
-        <h1 class="text-primary mb-4">Your Logistic Partner</h1>
-        <h1 class="text-white display-3 mb-5">Welcome To Etruck Loads</h1>
-        <div class="mx-auto" style="width: 100%; max-width: 600px">
-          <!-- <div class="input-group">
-            <input
-              type="text"
-              class="form-control border-light"
-              style="padding: 30px"
-              placeholder="Tracking Id"
-            /> -->
-            <div class="col">
-             <a href="#form-section"> <button class="btn btn-outline-light px-10">Post Your Requirements</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Header End -->
-
-    <!-- About Start -->
-    <div class="container-fluid py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5 pb-4 pb-lg-0">
-            <img class="img-fluid w-100" src="img/about.jpg" alt="" />
-            <div class="bg-primary text-dark text-center p-4">
-              <h3 class="m-0">20+ Years Experience</h3>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <h6 class="text-primary text-uppercase font-weight-bold">
-                We Deals In All Types of Trucks
-              </h6>
-            <h1 class="mb-4">India's Most Trusted & Leading Logistic Service Provider</h1>
-            <p class="mb-4">
-              Etruck Loads is a India's largest logistic service provider, we serve Pan-India.
-            </p>
-            <div class="d-flex align-items-center pt-2">
-              <button
-                type="button"
-                class="btn-play"
-                data-toggle="modal"
-                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
-                data-target="#videoModal"
-              >
-                <span></span>
-              </button>
-              <h5 class="font-weight-bold m-0 ml-4">Watch How We Serve</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Video Modal -->
-      <div
-        class="modal fade"
-        id="videoModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <!-- 16:9 aspect ratio -->
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe
-                  class="embed-responsive-item"
-                  src=""
-                  id="video"
-                  allowscriptaccess="always"
-                  allow="autoplay"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- About End -->
+  
+    <!-- Header End --> 
 
     <!--  Quote Request Start -->
-    <div class="container-fluid bg-secondary my-5">
+    <div class="container-fluid bg-secondary bg-dark">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7 py-5 py-lg-0">
-            <h6 class="text-primary text-uppercase font-weight-bold">
-              For Booking
-            </h6>
-            <h1 class="mb-4">Post Your Requirements Here</h1>
-            <p class="mb-4 font-weight-bold">
-              We at Etrucks Loads are commited to serve you on time, your satisfaction is our highest priority. <br>
-              Kindly enter your requirements, so we can serve you at earliest.
-            </p>
-            <div class="row">
+        <div class="row align-items-center text-center">
+          <div class="col-lg-7 py-4 py-lg-0">
+            <div class="welcome-heading" >
+            <h2 class="mb-4  text-center welcome-text">Welcome To Etruckload</h2>
+          </div>
+          <p class="mb-4 font-weight-bold text-white text-capitalize">
+            We at Etrucks Loads are commited to serve you on time, your satisfaction is our highest priority. <br>
+            <br>
+            Kindly post your requirements to us, so we can serve you at earliest.
+          </p>
+            <div class="row text-center">
               <div class="col-sm-4">
-                <h1 class="text-primary mb-2" data-toggle="counter-up">50</h1>
-                <h6 class="font-weight-bold mb-4">SKilled Experts</h6>
+               <h1 class="text-primary mb-2" data-toggle="counter-up">200</h1>
+                <h6 class="font-weight-bold mb-4 text-info">SKilled Experts</h6>
               </div>
               <div class="col-sm-4">
                 <h1 class="text-primary mb-2" data-toggle="counter-up">1050</h1>
-                <h6 class="font-weight-bold mb-4">Happy Clients</h6>
+                <h6 class="font-weight-bold mb-4 text-danger">Happy Clients</h6>
               </div>
               <div class="col-sm-4">
-                <h1 class="text-primary mb-2" data-toggle="counter-up">2500</h1>
-                <h6 class="font-weight-bold mb-4">Bookings Completed</h6>
+                <h1 class="text-primary mb-2" data-toggle="counter-up">9000</h1>
+                <h6 class="font-weight-bold mb-4 text-success">Bookings Completed</h6>
               </div>
             </div>
+            <h6 class="text-warning text-uppercase font-weight-bold text-center py-3">
+              For Booking
+            </h6>
+            <h5 class="text-white text-center">Post Your Requirements Here</h5>
+            
           </div>
           <div id="form-section" class="col-lg-5">
-            <div class="bg-primary py-5 px-4 px-sm-5">
-              <div id="app">
+            <div class="bg-primary py-2 px-4 px-sm-5 ">
+              <div id="app" >
                 <form v-if="formSubmitted">
-                    <div class="form-group text-light text-center">
+                    <div class="form-group text-light text-center form-container mt-1">
                       <div class="form-check form-check-inline mr-2">
                         <input
                           class="form-check-input"
@@ -280,9 +192,8 @@
                           >I Want Truck</label
                         >
                       </div>
-                      <br>
-                      <br>
-                      <div class="form-group text-left text-light">
+
+                      <div class="form-group text-center text-light mt-2">
                         <label for="exampleFormControlInput1">Phone Number</label>
                         <input
                           type="phone"
@@ -337,7 +248,6 @@
                         <div  class="form-group col-md-6">
                           <label for="exampleFormControlSelect1">Vehicle Type</label>
                           <select class="form-control" id="exampleFormControlSelect1" v-model="vehicleType" required>
-                            <option selected>Vehicle Type</option>
                             <option>32 Feet , 7 Ton (32 * 8 * 8)</option>
                             <option>32 Feet , 7 Ton hq (32 * 8 * 9.6)</option>
                             <option>32 Feet , 9 Ton (32 * 8 * 8)</option>
@@ -353,7 +263,6 @@
                         <div class="form-group col-md-6">
                           <label for="exampleFormControlSelect1">Payment Terms</label>
                           <select class="form-control" id="exampleFormControlSelect1"  v-model="paymentTerms" required>
-                            <option selected>Payment Terms</option>
                             <option>90% advance 10% at unloading/pod</option>
                             <option>80% advance 20 % at unload/pod</option>
                             <option>100% freight at unloading</option>
@@ -395,7 +304,7 @@
                     </div>
                     
                     <div class="col-md-4 justify-content-center m-auto pt-3">
-                      <button type="button" class="btn btn-outline-light">Submit</button>
+                      <button type="button" class="btn btn-outline">Submit</button>
                     </div>
                   </div>
                 </form>
@@ -407,43 +316,113 @@
     </div>
     <!-- Quote Request Start -->
 
+       <!-- About Start -->
+       <div id="about-us" class="container-fluid py-5">
+        <div  class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 pb-4 pb-lg-0">
+              <img class="img-fluid w-100" src="img/about.jpg" alt="" />
+              <div class="bg-primary text-dark text-center p-4">
+                <h3 class="m-0">20+ Years Experience</h3>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <h4 class="text-info font-weight-bold">
+                  About Us
+                </h4>
+              <h1 class="mb-2 text-primary">India's Most Trusted & Leading Logistic Service Provider</h1>
+              <p class="mb-4 text-black-30">
+                We at truckload logistics pvt ltd serve from last more than 10 years in road transportation sector in india to fulfill our clients needs. To serve our best in class services we use various type of commercial vehicles like tata chota haathi, mahindra pickup, tata 407, eicher 1109, 20, 22 and 32 feet close body container trucks and 20 to 60 feet long trailers. We etruckload logistics use our tempo, dala body, container trucks and trailers to move all type of  industrial, commercial, household goods from all metro cities to all over india.
+                From 2011 we focus mainly on 32 feet single axle (7 to 9 ton), double axle (14 to 17 ton) and triple axle (20 ton to 24 ton) container body vehicles to ensure safe and secured delivery of delicate items for various industries like electronics, furniture, snacks, automobile, packaging, pharma, export material and many more.
+                We give service guarantee on each shipment because of our well trained field staff, drivers and technology equipped (GPS enabled) fleet.
+  
+  So please contact us without any doubt in our services.
+              </p>
+              <!-- <div class="d-flex align-items-center pt-2">
+                <button
+                  type="button"
+                  class="btn-play"
+                  data-toggle="modal"
+                  data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
+                  data-target="#videoModal"
+                >
+                  <span></span>
+                </button>
+                <h5 class="font-weight-bold m-0 ml-4">Watch How We Serve</h5>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <!-- Video Modal -->
+        <div
+          class="modal fade"
+          id="videoModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe
+                    class="embed-responsive-item"
+                    src=""
+                    id="video"
+                    allowscriptaccess="always"
+                    allow="autoplay"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About End -->
+
     <!-- Services Start -->
-    <div class="container-fluid pt-5">
+    <div id="our-services" class="container-fluid pt-5">
       <div class="container">
         <div class="text-center pb-2">
-          <h6 class="text-primary text-uppercase font-weight-bold">
-            Our Services
-          </h6>
-          <h1 class="mb-4">Services We Provide</h1>
+          <h4 class="text-info font-weight-bold">
+            Our Fleets
+          </h4>
+          <h1 class="mb-4 text-primary">Fleets We Provide</h1>
         </div>
         <div class="row pb-3">
-            <div class="col-lg-3 col-md-6 text-center mb-5">
+            <div class="col-lg-3 col-md-6 text-center mb-3">
                 <div
                   class="
                     d-flex
                     align-items-center
                     justify-content-center
-                    bg-primary
+                    bg-danger
                     mb-4
                     p-4
                   "
                 >
-                  <i class="fa fa-2x fa-truck text-dark pr-3"></i>
+                  <i class="fa fa-2x fa-truck text-dark pr-3 "></i>
                   <h6 class="text-white font-weight-medium m-0">32 Feet , 7 Ton (32 * 8 * 8)</h6>
                 </div>
-                <p>
-                  Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet
-                  diam sea est diam
-                </p>
-                <a class="border-bottom text-decoration-none" href="">Read More</a>
+               
               </div>
-          <div class="col-lg-3 col-md-6 text-center mb-5">
+          <div class="col-lg-3 col-md-6 text-center mb-3">
             <div
               class="
                 d-flex
                 align-items-center
                 justify-content-center
-                bg-primary
+                bg-danger
                 mb-4
                 p-4
               "
@@ -451,19 +430,15 @@
               <i class="fa fa-2x fa-truck text-dark pr-3"></i>
               <h6 class="text-white font-weight-medium m-0">32 Feet , 7 Ton hq (32 * 8 * 9.6)</h6>
             </div>
-            <p>
-              Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet
-              diam sea est diam
-            </p>
-            <a class="border-bottom text-decoration-none" href="">Read More</a>
+           
           </div>
-          <div class="col-lg-3 col-md-6 text-center mb-5">
+          <div class="col-lg-3 col-md-6 text-center mb-3">
             <div
               class="
                 d-flex
                 align-items-center
                 justify-content-center
-                bg-primary
+                bg-danger
                 mb-4
                 p-4
               "
@@ -471,19 +446,15 @@
               <i class="fa fa-2x fa-truck text-dark pr-3"></i>
               <h6 class="text-white font-weight-medium m-0">32 Feet , 9 Ton (32 * 8 * 8)</h6>
             </div>
-            <p>
-              Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet
-              diam sea est diam
-            </p>
-            <a class="border-bottom text-decoration-none" href="">Read More</a>
+           
           </div>
-          <div class="col-lg-3 col-md-6 text-center mb-5">
+          <div class="col-lg-3 col-md-6 text-center mb-3">
             <div
               class="
                 d-flex
                 align-items-center
                 justify-content-center
-                bg-primary
+                bg-danger
                 mb-4
                 p-4
               "
@@ -491,19 +462,15 @@
               <i class="fa fa-2x fa-truck text-dark pr-3"></i>
               <h6 class="text-white font-weight-medium m-0">32 Feet , 9 Ton hq (32 * 8 * 9.6)</h6>
             </div>
-            <p>
-              Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet
-              diam sea est diam
-            </p>
-            <a class="border-bottom text-decoration-none" href="">Read More</a>
+           
           </div>
-          <div class="col-lg-3 col-md-6 text-center mb-5">
+          <div class="col-lg-3 col-md-6 text-center mb-3">
             <div
               class="
                 d-flex
                 align-items-center
                 justify-content-center
-                bg-primary
+                bg-danger
                 mb-4
                 p-4
               "
@@ -511,19 +478,15 @@
               <i class="fa fa-2x fa-truck text-dark pr-3"></i>
               <h6 class="text-white font-weight-medium m-0">32 Feet , 14 Ton (32 * 8 * 8)</h6>
             </div>
-            <p>
-              Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet
-              diam sea est diam
-            </p>
-            <a class="border-bottom text-decoration-none" href="">Read More</a>
+           
           </div>
-          <div class="col-lg-3 col-md-6 text-center mb-5">
+          <div class="col-lg-3 col-md-6 text-center mb-3">
             <div
               class="
                 d-flex
                 align-items-center
                 justify-content-center
-                bg-primary
+                bg-danger
                 mb-4
                 p-4
               "
@@ -531,19 +494,15 @@
               <i class="fa fa-2x fa-truck text-dark pr-3"></i>
               <h6 class="text-white font-weight-medium m-0">32 Feet , 14 Ton hq (32 * 8 * 9.6)</h6>
             </div>
-            <p>
-              Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet
-              diam sea est diam
-            </p>
-            <a class="border-bottom text-decoration-none" href="">Read More</a>
+           
           </div>
-          <div class="col-lg-3 col-md-6 text-center mb-5">
+          <div class="col-lg-3 col-md-6 text-center mb-3">
             <div
               class="
                 d-flex
                 align-items-center
                 justify-content-center
-                bg-primary
+                bg-danger
                 mb-4
                 p-4
               "
@@ -551,19 +510,15 @@
               <i class="fa fa-2x fa-truck text-dark pr-3"></i>
               <h6 class="text-white font-weight-medium m-0">32 Feet , 17 Ton (32 * 8 * 8)</h6>
             </div>
-            <p>
-              Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet
-              diam sea est diam
-            </p>
-            <a class="border-bottom text-decoration-none" href="">Read More</a>
+            
           </div>
-          <div class="col-lg-3 col-md-6 text-center mb-5">
+          <div class="col-lg-3 col-md-6 text-center mb-3">
             <div
               class="
                 d-flex
                 align-items-center
                 justify-content-center
-                bg-primary
+                bg-danger
                 mb-4
                 p-4
               "
@@ -571,19 +526,15 @@
               <i class="fa fa-2x fa-truck text-dark pr-3"></i>
               <h6 class="text-white font-weight-medium m-0">32 Feet , 17 Ton hq (32 * 8 * 9.6)</h6>
             </div>
-            <p>
-              Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet
-              diam sea est diam
-            </p>
-            <a class="border-bottom text-decoration-none" href="">Read More</a>
+            
           </div>
-          <div class="col-lg-3 col-md-6 text-center mb-5">
+          <div class="col-lg-3 col-md-6 text-center mb-3">
             <div
               class="
                 d-flex
                 align-items-center
                 justify-content-center
-                bg-primary
+                bg-danger
                 mb-4
                 p-4
               "
@@ -591,19 +542,15 @@
               <i class="fa fa-2x fa-truck text-dark pr-3"></i>
               <h6 class="text-white font-weight-medium m-0">20 feet , 7 ton (20*7*8)</h6>
             </div>
-            <p>
-              Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet
-              diam sea est diam
-            </p>
-            <a class="border-bottom text-decoration-none" href="">Read More</a>
+           
           </div>
-          <div class="col-lg-3 col-md-6 text-center mb-5">
+          <div class="col-lg-3 col-md-6 text-center mb-3">
             <div
               class="
                 d-flex
                 align-items-center
                 justify-content-center
-                bg-primary
+                bg-danger
                 mb-4
                 p-4
               "
@@ -611,11 +558,7 @@
               <i class="fa fa-2x fa-truck text-dark pr-3"></i>
               <h6 class="text-white font-weight-medium m-0">19 feet, 7 ton (open dala)</h6>
             </div>
-            <p>
-              Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet
-              diam sea est diam
-            </p>
-            <a class="border-bottom text-decoration-none" href="">Read More</a>
+            
           </div>
         </div>
       </div>
@@ -1174,18 +1117,23 @@
     <!-- Blog End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+    <div id="contact-us" class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
       <div class="row pt-5">
         <div class="col-lg-7 col-md-6">
           <div class="row">
             <div class="col-md-6 mb-5">
-              <h3 class="text-primary mb-4">Get In Touch With Us</h3>
+              <h3 class="text-primary mb-4">Contact Us</h3>
               <p>
-                <i class="fa fa-map-marker-alt mr-2"></i>D-4C, Goverdhan Park, Gurpreet Nagar, Mohan Garden, Uttam Nagar, New Delhi, Delhi 110059
-              </p>
-              <p><i class="fa fa-phone-alt mr-2"></i>+91 9821824740</p>
+                <i class="fa fa-map-marker-alt mr-2"></i>Etruckload logistics pvt. Ltd. D-4c, Street no. 1, D-block, mohan garden, delhi-110059
+              <p><i class="fa fa-phone-alt mr-2"></i>+91 9821824740, 9821824741, 9821824742</p>
               <p><i class="fa fa-envelope mr-2"></i>yadavtips@gmail.com</p>
               <div class="d-flex justify-content-start mt-4">
+                <a class="btn btn-outline-light btn-social mr-2" href="#"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social mr-2" href="https://www.google.com/maps/place/Etruckload+logistics+pvt+ltd+20,+32+feet+container+trucks+supplier+Delhi%2FNCR+to+all+over+India/@28.6235834,77.0418842,17z/data=!3m1!4b1!4m5!3m4!1s0x390d05a76f5571ed:0x67a0374232915a8c!8m2!3d28.6235834!4d77.0440757" target="_blank"
+              ><i class="fa fa-map-marker-alt"></i
+            ></a>
                 <a class="btn btn-outline-light btn-social mr-2" href="#"
                   ><i class="fab fa-twitter"></i
                 ></a>
@@ -1206,16 +1154,13 @@
                 <a class="text-white mb-2" href="#"
                   ><i class="fa fa-angle-right mr-2"></i>Home</a
                 >
-                <a class="text-white mb-2" href="#"
+                <a class="text-white mb-2" href="#about-us"
                   ><i class="fa fa-angle-right mr-2"></i>About Us</a
                 >
-                <a class="text-white mb-2" href="#"
-                  ><i class="fa fa-angle-right mr-2"></i>Our Services</a
+                <a class="text-white mb-2" href="#our-services"
+                  ><i class="fa fa-angle-right mr-2"></i>Our Fleets</a
                 >
-                <a class="text-white mb-2" href="#"
-                  ><i class="fa fa-angle-right mr-2"></i>Pricing Plan</a
-                >
-                <a class="text-white" href="#"
+                <a class="text-white" href="#contact-us"
                   ><i class="fa fa-angle-right mr-2"></i>Contact Us</a
                 >
               </div>
@@ -1251,7 +1196,7 @@
       <div class="row">
         <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
           <p class="m-0 text-white">
-            &copy; <a href="#">Etrucks Loads</a>. All Rights Reserved. Designed & Developed
+            &copy; <a href="#">Etruck Load</a>. All Rights Reserved. Designed & Developed
             by <a href="https://github.com/nitinanand58">Nitin Anand</a>
           </p>
         </div>
@@ -1277,7 +1222,7 @@
     <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary back-to-top"
+    <a href="#" class="btn btn-sm btn-primary back-to-top"
       ><i class="fa fa-angle-double-up"></i
     ></a>
 
