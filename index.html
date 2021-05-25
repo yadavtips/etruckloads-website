@@ -27,7 +27,7 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/custom.css">
@@ -137,15 +137,15 @@
           </p>
             <div class="row text-center">
               <div class="col-sm-4">
-               <h2 class="text-white mb-2" data-toggle="counter-up">200</h2>
+               <h2><span class="text-white mb-2" data-toggle="counter-up">200</span><span class="text-white mb-2" >&nbsp;+</span></h2>
                 <h6 class="font-weight-bold mb-4 text-dark bg-white py-2 counter-text">Skilled Experts</h6>
               </div>
               <div class="col-sm-4">
-                <h2 class="text-white mb-2" data-toggle="counter-up">1050</h2>
+                <h2><span class="text-white mb-2" data-toggle="counter-up">1050</span><span class="text-white mb-2" >&nbsp;+</span></h2>
                 <h6 class="font-weight-bold mb-4 text-dark bg-white py-2 counter-text">Happy Clients</h6>
               </div>
               <div class="col-sm-4 col">
-                <h2 class="text-white mb-2" data-toggle="counter-up">9000</h2>
+                <h2><span class="text-white mb-2" data-toggle="counter-up">9000</span><span class="text-white mb-2" >&nbsp;+</span></h2>
                 <h6 class="font-weight-bold mb-4 text-dark bg-white py-2 counter-text">Bookings Completed</h6>
               </div>
             </div>
@@ -290,18 +290,15 @@
                 <form v-else>
                   <div class="form-row mt-3">
                     <div class="form-group col-md-8">
-                      <label for="exampleFormControlInput1" style="color: white;">ENTER OTP</label>
+                      <h6>Form Submitted</h6>
+                      <!-- <label for="exampleFormControlInput1" style="color: white;">ENTER OTP</label>
                       <input
                         type="OTP"
                         class="form-control"
                         id="exampleFormControlInput1"
                         placeholder="Enter Your OTP"
-                      />
-                    </div>
-                    
-                    <div class="col-md-4 justify-content-center m-auto pt-3">
-                      <button type="button" class="btn btn-outline">Submit</button>
-                    </div>
+                      /> -->
+                      </div>
                   </div>
                 </form>
                 </div>
@@ -759,10 +756,7 @@ var requestOptions = {
      .then(response => response.text())
      .then(result => console.log(result))
      .catch(error => console.log('error', error));
-     // this.formSubmitted = null
-      
-
-   
+     this.formSubmitted = null
     }
   },
 })
