@@ -29,7 +29,7 @@ html {
 }
 
 .welcome-text {
-  color: #ffffff;
+  color: #ffffff !important;
   animation: color-change 1s 3;
 }
 
@@ -46,20 +46,20 @@ html {
 }
 
 .counter-text {
-  border: 2px solid rgb(238, 255, 0);
-  border-radius: 4px;
-  box-shadow: 3px 7px 55px 3px rgba(212, 81, 205, 0.63);
+  border: 2px solid rgb(238, 255, 0) !important;
+  border-radius: 4px !important;
+  box-shadow: 3px 7px 55px 3px rgba(212, 81, 205, 0.63) !important;
 }
 
 /* media query */
 
 @media screen and (max-width: 575px) {
   .welcome-text {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 
   .counter-text {
-    width: 200px;
-    margin: auto;
+    width: 200px !important;
+    margin: auto !important;
   }
 }
