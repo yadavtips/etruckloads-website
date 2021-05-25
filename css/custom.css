@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.nav-bg {
+  background-color: rgb(198, 194, 255);
+}
+
 .quote-btn:hover {
   background-color: rgb(255, 255, 255);
   color: black;
@@ -29,7 +33,7 @@ html {
 }
 
 .welcome-text {
-  color: #ffffff !important;
+  color: #ffffff;
   animation: color-change 1s 3;
 }
 
@@ -49,6 +53,38 @@ html {
   border: 2px solid rgb(238, 255, 0) !important;
   border-radius: 4px !important;
   box-shadow: 3px 7px 55px 3px rgba(212, 81, 205, 0.63) !important;
+}
+
+.fa-facebook-square {
+  color: rgb(75, 75, 255);
+  font-size: 30px;
+}
+
+.facebook-page {
+  background-color: rgb(75, 75, 255);
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.map {
+  color: rgb(173, 42, 145);
+  font-size: 27px;
+}
+
+.fa-whatsapp-square {
+  color: rgb(16, 221, 16);
+  font-size: 30px;
+}
+
+.fa-linkedin {
+  color: rgb(78, 78, 250);
+  font-size: 30px;
+}
+
+.fa-youtube-square {
+  background-color: rgb(255, 255, 255);
+  color: red;
+  font-size: 30px;
 }
 
 /* media query */
