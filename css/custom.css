@@ -29,18 +29,37 @@ html {
 }
 
 .welcome-text {
-  color: #ff0000;
-  animation: color-change 1s 5;
+  color: #ffffff;
+  animation: color-change 1s 3;
 }
 
 @keyframes color-change {
   0% {
-    color: rgb(255, 238, 0);
+    color: rgb(166, 255, 0);
   }
   50% {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
   }
   100% {
-    color: #ff0000;
+    color: #ffffff;
+  }
+}
+
+.counter-text {
+  border: 2px solid rgb(238, 255, 0);
+  border-radius: 4px;
+  box-shadow: 3px 7px 55px 3px rgba(212, 81, 205, 0.63);
+}
+
+/* media query */
+
+@media screen and (max-width: 575px) {
+  .welcome-text {
+    font-size: 24px;
+  }
+
+  .counter-text {
+    width: 200px;
+    margin: auto;
   }
 }
